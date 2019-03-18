@@ -1,11 +1,35 @@
+body {
+  background-color: darkslategray;
+}
+
 h1 {
   text-align: center;
+  color: thistle;
 }
 
 .Img {
   &__container{
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
     img{
-      margin: 0 auto;
+      width: 100%;
+      height: auto;
     }
   }
 }
+
+.slick {
+  &-prev, &-next{
+    z-index: 1000;
+  }
+
+  &-prev {
+    left: 25px !important;
+  }
+
+  &-next {
+    right: 25px !important;
+  }
+}
+
